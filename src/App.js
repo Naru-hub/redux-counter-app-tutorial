@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
-import { increment } from "./redux/counterSlice";
+import { decrement, increment } from "./redux/counterSlice";
 
 function App() {
   // 状態にアクセスするためのHooks
@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       <h1>count: {count}</h1>
-      <button onClick={() => dispatch(increment())}>＋</button>
+      <button onClick={() => dispatch(increment())}>+</button>
+      <button onClick={() => dispatch(decrement())}>-</button>
     </div>
   );
 }

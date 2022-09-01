@@ -19,11 +19,12 @@ body {
 
 button {
   padding: 15px 25px;
-  font-size: 35px;
+  font-size: 30px;
+  height: 78px;
 }
 
 input {
-  height: 80px;
+  height: 73px;
   width: 150px;
   font-size: 30px;
 }
